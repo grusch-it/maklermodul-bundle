@@ -70,6 +70,7 @@ class EstateRepository
         $returnValue = [];
 
         foreach ($directoryIterator as $child) {
+            echo "\n\r Path: " . $child->getPathname();
             if ($this->isRelevantJson($child->getPathname())) {
                 $estate = $this->loadJsonFile($child->getPathname());
                 $returnValue[] = $estate;
