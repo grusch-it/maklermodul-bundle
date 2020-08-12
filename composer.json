@@ -26,7 +26,8 @@
   },
   "require": {
     "php": ">=7.2",
-    "contao/core-bundle": "^4.7"
+    "contao/core-bundle": "^4.4",
+    "ausi/contao-slug-backport": "^1.0"
   },
   "require-dev": {
     "contao/test-case": "^1.4.1",

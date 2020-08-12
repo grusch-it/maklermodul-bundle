@@ -97,7 +97,7 @@ class Estate
         $validAliasCharacters = System::getContainer()->getParameter('pdir_maklermodul.validAliasCharacters');
 
         // remove the prefix if "id-" is set
-        $strValue = System::getContainer()->get('contao.slug')->generate($strSource, ['validChars' => $validAliasCharacters]);
+        $strValue = System::getContainer()->get('contao.slug.generator')->generate($strSource, ['validChars' => $validAliasCharacters]);
 
         if (strpos($strValue,"id-")!==false && !is_numeric($strSubstr = substr($strValue, 3)))
         {
